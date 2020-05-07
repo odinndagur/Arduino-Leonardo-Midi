@@ -94,26 +94,13 @@ pinMode(BUTTON_ARDUINO_PIN[pin13index], INPUT);
 
 /////////////////////////////////////////////
 // LOOP
-int channelSelect = 1;
+
 void loop() {
 
   buttons();
   potentiometers();
 
- int pot = analogRead(A0);
-  if(pot < 25){
-    channelSelect = 0;
-  }
-  else if (pot < 512){
-    channelSelect = 1;
-
-      }
-  else if (pot < 767){
-    channelSelect = 2;
-      }
-  else {
-    channelSelect = 3;
-  }
+ 
 }
 
 /////////////////////////////////////////////
